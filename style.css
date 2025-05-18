@@ -1,4 +1,38 @@
 *{
   padding: 0;
   margin: 0;
+  background-color: black;
+}
+
+.topbar{
+  height: 4rem;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.sidebar{
+  height: 75vh;
+  width: 25%;
+  background-color: #121212;
+  color: white;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.musicarea{
+  height: 75vh;
+  width: 75%;
+  background-color: #121212;
+  color: white;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.player{
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
