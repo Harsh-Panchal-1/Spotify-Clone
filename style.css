@@ -14,6 +14,7 @@
 }
 
 .logo{
+  position: relative;
   display: flex;
   height: 4rem;
   width: 30%;
@@ -21,16 +22,18 @@
 }
 
 .logo .darklogo{
+  position: absolute;
   height: 2rem;
   width: 2rem;
-  margin-left: 1rem;
+  left: 1rem;
 }
 
 .logo .home{
+  position: absolute;
+  right: 1rem;
   display: flex;
-  background-color: #1a1a1a;
+  background-color: #212121;
   padding: 0.5rem 0.5rem;
-  margin-left: 17rem;
   height: 2rem;
   width: 2rem;
   border: none;
@@ -44,7 +47,7 @@
 }
 
 .logo .home img{
-  background-color: #1a1a1a;
+  background-color: #212121;
   height: 1.75rem;
 }
 
@@ -84,6 +87,7 @@
 }
 
 .account{
+  position: relative;
   display: flex;
   height: 4rem;
   width: 30%;
@@ -91,10 +95,11 @@
 }
 
 .account .bell{
+  position: absolute;
+  right: 9rem;
   display: flex;
-  background-color: #1a1a1a;
+  background-color: #212121;
   padding: 0.5rem 0.5rem;
-  margin-left: 50%;
   height: 2rem;
   width: 2rem;
   border: none;
@@ -104,15 +109,16 @@
 }
 
 .account .bell img{
-  background-color: #1a1a1a;
+  background-color: #212121;
   height: 1.75rem;
 }
 
 .account .friends{
+  position: absolute;
+  right: 5rem;
   display: flex;
-  background-color: #1a1a1a;
+  background-color: #212121;
   padding: 0.5rem 0.5rem;
-  margin-left: 1rem;
   height: 2rem;
   width: 2rem;
   border: none;
@@ -122,15 +128,16 @@
 }
 
 .account .friends img{
-  background-color: #1a1a1a;
+  background-color: #212121;
   height: 1.75rem;
 }
 
 .account .account_icon{
+  position: absolute;
+  right: 1rem;
   display: flex;
-  background-color: #1a1a1a;
+  background-color: #212121;
   padding: 0.5rem 0.5rem;
-  margin-left: 1rem;
   height: 2rem;
   width: 2rem;
   border: none;
@@ -140,14 +147,14 @@
 }
 
 .account .account_icon img{
-  background-color: #1a1a1a;
+  background-color: #212121;
   border-radius: 200px;
   height: 2.5rem;
 }
 
 .sidebar{
   height: 75vh;
-  width: 25%;
+  width: 35%;
   background-color: #121212;
   color: white;
   margin-left: 0.5rem;
@@ -155,9 +162,122 @@
   border-radius: 0.5rem;
 }
 
+.yourlib{
+  position: relative;
+  background-color: #121212;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+}
+.yourlib span{
+  position: absolute;
+  background-color: #121212;
+  left: 1rem;
+  font-weight: 700;
+}
+.create_button{
+  position: absolute;
+  right: 3.5rem;
+  height: 2rem;
+  width: 5.5rem;
+  background-color: #212121;
+  color: white;
+  font-weight: 750;
+  align-items: center;
+  border: none;
+  border-radius: 200px;
+  display: flex;
+}
+.create_button img{
+  opacity: 0.6;
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+  height: 1rem;
+  background-color: #212121;
+}
+.expand_button {
+  position: absolute;
+  right: 1.25rem;
+  width: 1rem;
+  background-color: #212121;
+  color: white;
+  font-weight: 750;
+  align-items: center;
+  border: none;
+  display: flex;
+  opacity: 0.5;
+}
+.expand_button img{
+  width: 1rem;
+  background-color: #121212;
+}
+
+.filters{
+  background-color: #121212;
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+.filter_button{
+  font-size: 1px;
+  margin-left: 0.5rem;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #212121;
+  color: white;
+  font-weight: 500;
+  align-items: center;
+  border: none;
+  border-radius: 200px;
+  display: flex;
+}
+
+.search_section{
+  position: relative;
+  background-color: #121212;
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+.search_section_icon{
+  position: absolute;
+  left: 1rem;
+  background-color: #121212;
+  width: 1.5rem;
+  opacity: 0.5;
+}
+.recent_button{
+  position: absolute;
+  right: 0.5rem;
+  height: 2rem;
+  padding: 0.5rem 0.5rem;
+  opacity: 0.7;
+  background-color: #121212;
+  color: white;
+  font-size: 0.5rem;
+  font-weight: 400;
+  align-items: center;
+  border: none;
+  border-radius: 200px;
+  display: flex;
+}
+.recent_button img{
+  width: 1.5rem;
+  margin-left: 0.5rem;
+  opacity: 1;
+  background-color: #121212;
+}
+
+
 .musicarea{
   height: 75vh;
-  width: 75%;
+  width: 65%;
   background-color: #121212;
   color: white;
   margin-left: 0.5rem;
