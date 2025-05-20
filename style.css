@@ -171,7 +171,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3rem;
+  height: 10%;
 }
 .yourlib span{
   position: absolute;
@@ -221,7 +221,7 @@
   border: none;
   display: flex;
   align-items: center;
-  height: 3rem;
+  height: 10%;
 }
 .filter_button{
   font-size: 1px;
@@ -243,7 +243,7 @@
   border: none;
   display: flex;
   align-items: center;
-  height: 2rem;
+  height: 5%;
 }
 .search_section_icon{
   position: absolute;
@@ -274,6 +274,68 @@
   background-color: #121212;
 }
 
+.list{
+  background-color: #121212;
+  justify-content: center;
+  margin-top: 10px;
+  height: 73%;
+  overflow: auto;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.list::-webkit-scrollbar{
+  width: 10px;
+}
+.list::-webkit-scrollbar-track{
+  background-color: #121212;
+  border-radius: 0.5rem;
+}
+.list::-webkit-scrollbar-thumb{
+  background-color: #303030;
+  border-radius: 1rem;
+}
+.playlist_card{
+  display: flex;
+  background-color: #121212;
+  border: none;
+  border-radius: 10px;
+  width: 95%;
+  padding: 2px 2px;
+  align-items: center;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.card_img{
+  background-color: #121212;
+}
+.card_img img{
+  border-radius: 5px;
+  border: none;
+  width: 3.25rem;
+  margin-right: 0.75rem;
+}
+.card_details{
+  background-color: #121212;
+}
+.card_details p{
+  background-color: #121212;
+  padding: 3px;
+}
+.card_details img{
+  background-color: #121212;
+  display: inline-block;
+  width: 0.9rem;
+}
+#one{
+  font-size: 1rem;
+  font-weight: 500;
+}
+#two{
+  display: inline-block;
+  color: #ffffff83;
+  font-size: 0.25rem;
+  font-weight: 500;
+}
 
 .musicarea{
   height: 75vh;
