@@ -1,3 +1,9 @@
+html{
+overflow: hidden;
+}
+body{
+  height: 100vh;
+}
 *{
   padding: 0;
   margin: 0;
@@ -6,7 +12,7 @@
 }
 
 .topbar{
-  height: 4rem;
+  height: 10.5vh;
   width: 100%;
   background-color: rgb(0, 0, 0);
   color: white;
@@ -425,14 +431,14 @@
   display: grid;
   gap: 20px;
   background-color: #121212;
-  grid-template-columns: repeat(auto-fit, 11rem);
+  grid-template-columns: repeat(auto-fit, 12rem);
   grid-template-rows: repeat(1, 1fr);
   grid-auto-flow: column;
   overflow-x: scroll;
   overflow-y: hidden;
   margin-left: 2rem;
   margin-top: 1rem;
-  height: 14rem;
+  height: 15rem;
 }
 .suggestion_list::-webkit-scrollbar{
   width: 0px;
@@ -444,7 +450,7 @@
 }
 .sug_card p{
   background-color: #121212;
-  width: 10rem;
+  width: 11rem;
   margin-top: 0.5rem;
   font-size: xx-small;
   font-weight: 500;
@@ -452,10 +458,87 @@
 }
 .sug_card img{
   background-color: #121212;
-  width: 10rem;
+  width: 11rem;
   border-radius: 0.5rem;
 }
+
+
 .player{
+  display: flex;
   background-color: rgb(0, 0, 0);
   color: white;
+  width: 100%;
+  height: 14.5vh;
+}
+.album{
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  width: 25%;
+}
+.album .playlist_card{
+    margin: 0px 0px;
+    background-color: black;
+}
+.album .playlist_card .card_details,.album .playlist_card #one,.album .playlist_card .card_img,
+.album .playlist_card #two{
+  background-color: black;
+}
+
+.controls{
+  background-color: black;
+  width: 50%;
+}
+.control_icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+.control_icons img{
+  width: 0.9rem;
+  opacity: 0.8;
+  margin: 1rem;
+}
+.control_icons .play_icon{
+  width: 2.5rem;
+  opacity: 1;
+}
+.control_bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1px;
+  font-weight: 500;
+}
+.control_bar input[type=range]{
+  width: 70%;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #303030;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.control_bar input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  background: white;
+  height: 15px;
+  width: 10px;
+}
+
+.options{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 25%;
+}
+.options img{
+  width: 2rem;
+  margin: 5px;
+  opacity: 0.9;
 }
