@@ -172,6 +172,7 @@
   align-items: center;
   justify-content: center;
   height: 10%;
+  margin-top: 0.25rem;
 }
 .yourlib span{
   position: absolute;
@@ -278,7 +279,7 @@
   background-color: #121212;
   justify-content: center;
   margin-top: 10px;
-  height: 73%;
+  height: 72%;
   overflow: auto;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -309,8 +310,10 @@
   background-color: #121212;
 }
 .card_img img{
-  border-radius: 5px;
-  border: none;
+  border-radius: 8px;
+  border: solid;
+  border-color: white;
+  border-width: 0.5px;
   width: 3.25rem;
   margin-right: 0.75rem;
 }
@@ -346,8 +349,112 @@
   margin-right: 0.5rem;
   border: none;
   border-radius: 0.5rem;
+  overflow: auto;
+}
+.musicarea::-webkit-scrollbar{
+  width: 10px;
+}
+.musicarea::-webkit-scrollbar-track{
+  background-color: #121212;
+  border-radius: 0.5rem;
+}
+.musicarea::-webkit-scrollbar-thumb{
+  background-color: #303030;
+  border-radius: 1rem;
+}
+.recent_plays{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: #121212;
+}.recent_plays .cards{
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+.cards .card_details>#one{
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #212121;
+}
+.cards img{
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  margin-right: 0.5rem;
+  width: 3.25rem;
 }
 
+.suggestion_cards{
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #121212;
+}
+.title{
+  position: relative;
+  background-color: #121212;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.made_for{
+  font-size: 1px;
+  font-weight: 400;
+  opacity: 0.7;
+  background-color: #121212;
+}
+.title p{
+  background-color: #121212;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.name{
+  background-color: #121212;
+}
+.title .show_all{
+  position: absolute;
+  background-color: #121212;
+  right: 0.25rem;
+  font-size: 1px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+.suggestion_list{
+  display: grid;
+  gap: 20px;
+  background-color: #121212;
+  grid-template-columns: repeat(auto-fit, 11rem);
+  grid-template-rows: repeat(1, 1fr);
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  height: 14rem;
+}
+.suggestion_list::-webkit-scrollbar{
+  width: 0px;
+}
+.sug_card{
+  background-color: #d80606;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+}
+.sug_card p{
+  background-color: #121212;
+  width: 10rem;
+  margin-top: 0.5rem;
+  font-size: xx-small;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.sug_card img{
+  background-color: #121212;
+  width: 10rem;
+  border-radius: 0.5rem;
+}
 .player{
   background-color: rgb(0, 0, 0);
   color: white;
