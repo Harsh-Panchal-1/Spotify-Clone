@@ -7,6 +7,9 @@ body{
 p{
   background-color: transparent !important;
 }
+img{
+  background-color: transparent !important;
+}
 button:hover, button:hover img{
   background-color: #303030;
   cursor: pointer;
@@ -53,6 +56,11 @@ button:hover, button:hover img{
   border-radius: 100px;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+}
+.logo .home:hover{
+  background-color: #303030;
+  cursor: pointer;
 }
 
 .logo .darklogo img{
@@ -119,6 +127,11 @@ button:hover, button:hover img{
   border-radius: 100px;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+}
+.account .bell:hover{
+  background-color: #303030;
+  cursor: pointer;
 }
 
 .account .bell img{
@@ -138,6 +151,11 @@ button:hover, button:hover img{
   border-radius: 100px;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+}
+.account .friends:hover{
+  background-color: #303030;
+  cursor: pointer;
 }
 
 .account .friends img{
@@ -157,8 +175,12 @@ button:hover, button:hover img{
   border-radius: 100px;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 }
-
+.account .account_icon:hover{
+  background-color: #303030;
+  cursor: pointer;
+}
 .account .account_icon img{
   background-color: #212121;
   border-radius: 200px;
@@ -497,9 +519,11 @@ button:hover, button:hover img{
   width: 0px;
 }
 .sug_card{
+  position: relative;
   background-color: #121212;
   border-radius: 0.5rem;
   padding: 0.5rem 0.5rem;
+  transition: 0.5s;
 }
 .sug_card p{
   display: flex;
@@ -514,6 +538,28 @@ button:hover, button:hover img{
   background-color: #121212;
   width: 11rem;
   border-radius: 0.5rem;
+}
+.sug_card .greenplaybutton{
+  opacity: 0;
+  position: absolute;
+  top: 8.5rem;
+  right: 1rem;
+  width: 3rem;
+  z-index: 2;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.sug_card:hover{
+  background-color: #212121;
+}
+.sug_card:hover .greenplaybutton{
+  opacity: 1;
+  top: 8rem;
+  animation: ease;
+  cursor: pointer;
+}
+.greenplaybutton:hover{
+  transform: scale(1.1);
 }
 
 
