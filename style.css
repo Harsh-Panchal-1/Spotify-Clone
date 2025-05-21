@@ -438,7 +438,7 @@ body{
   overflow-y: hidden;
   margin-left: 2rem;
   margin-top: 1rem;
-  height: 15rem;
+  height: auto;
 }
 .suggestion_list::-webkit-scrollbar{
   width: 0px;
@@ -449,6 +449,7 @@ body{
   padding: 0.5rem 0.5rem;
 }
 .sug_card p{
+  display: flex;
   background-color: #121212;
   width: 11rem;
   margin-top: 0.5rem;
