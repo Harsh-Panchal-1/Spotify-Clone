@@ -21,7 +21,6 @@ I've also incorporated a few **small personal touches** to make this clone uniqu
 ## ✨ Features
 
 * Accurate visual replication of the Spotify Home Page design.
-* Responsive layout (adapts to different screen sizes, though focus was on the desktop view).
 * Clean, semantic HTML structure.
 * Stylish CSS for a modern user experience.
 
